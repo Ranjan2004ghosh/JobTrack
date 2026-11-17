@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobTrack - Application Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>JobTrack</h2>
+        <p>Track your career journey</p>
+    </header>
+
+    <main>
+        <section class="stats">
+            <div class="card">
+                <h3>Total Applications</h3>
+                <h2 id="total">0</h2>
+            </div>
+            <div class="card">
+                <h3>Interviews</h3>
+                <h2 id="interviews">0</h2>
+            </div>
+            <div class="card">
+                <h3>Selected</h3>
+                <h2 id="selected">0</h2>
+            </div>
+            <div class="card">
+                <h3>Rejected</h3>
+                <h2 id="rejected">0</h2>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Add Job Application</h2>
+
+            <form id="jobForm">
+                <input type="text" id="company"
+                    placeholder="Company Name" required>
+
+                <input type="text" id="position"
+                    placeholder="Job Position" required>
+
+                <input type="text" id="location"
+                    placeholder="Location">
+
+                <button type="submit">Add Application</button>
+            </form>
+        </section>
+
+        <section class="jobs-section">
+            <h2>My Applications</h2>
+
+            <input type="text" id="search"
+                placeholder="Search company or position...">
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Position</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="jobList"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
