@@ -1,5 +1,5 @@
 
-const API = "http://localhost:5000/api/jobs";
+const API = "https://jobtrack-zk6i.onrender.com/api/jobs";
 
 const form = document.getElementById("jobForm");
 const jobList = document.getElementById("jobList");
